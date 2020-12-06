@@ -39,6 +39,7 @@ def give_result(numbers):
             
             max_index -= 1
 
+
 file_expense_report = open('AoC_201201_1_input.txt', 'r')
 expense_report = [int(line.rstrip('\n')) for line in file_expense_report]
 expense_report_sorted = sorted(expense_report)
