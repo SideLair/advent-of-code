@@ -49,7 +49,6 @@ def common_answers(answers):
                 char_count[letter] = 1
             else:
                 char_count[letter] += 1
-    print(char_count)
     return len(char_count)
 
 
@@ -76,7 +75,6 @@ def amount_unique_chars(phrase):
             char_count[phrase[i]] = 1
         else:
             char_count[phrase[i]] += 1
-    print((char_count))
     return len(char_count)
 
 
