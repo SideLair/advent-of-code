@@ -6,6 +6,7 @@ Using the above example again, the three entries that sum to 2020 are 979, 366, 
 
 In your expense report, what is the product of the three entries that sum to 2020?
 """
+#04:20:34  16809
 
 def give_result(numbers):
     max_index = len(numbers) - 1

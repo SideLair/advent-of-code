@@ -19,6 +19,7 @@ In the above example, 2 passwords are valid. The middle password, cdefg, is not;
 
 How many passwords are valid according to their policies?
 """
+#04:20:34  16809
 
 def parse_policy(policy):
     occurences = policy[:policy.find(' ')]

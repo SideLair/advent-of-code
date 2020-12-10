@@ -25,6 +25,7 @@ In this example, a single shiny gold bag must contain 126 other bags.
 
 How many individual bags are required inside your single shiny gold bag?
 """
+#03:56:28  10671
 
 class Bag:
     def __init__(self, color, inner_bags):

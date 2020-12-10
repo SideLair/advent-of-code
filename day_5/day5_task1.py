@@ -37,6 +37,7 @@ FFFBBBFRRR: row 14, column 7, seat ID 119.
 BBFFBBFRLL: row 102, column 4, seat ID 820.
 As a sanity check, look through your list of boarding passes. What is the highest seat ID on a boarding pass?
 """
+#01:23:48   9573
 
 def switch_to_seat_ID(phrase):
     phrase = phrase.replace('R','1').replace('L','0').replace('B','1').replace('F','0')

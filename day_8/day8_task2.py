@@ -34,6 +34,7 @@ After the last instruction (acc +6), the program terminates by attempting to run
 
 Fix the program so that it terminates normally by changing exactly one jmp (to nop) or nop (to jmp). What is the value of the accumulator after the program terminates?
 """
+#01:19:31   7670
 
 
 def get_executed(instructions):

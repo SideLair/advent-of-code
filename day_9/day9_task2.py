@@ -27,6 +27,7 @@ In this list, adding up all of the numbers from 15 through 40 produces the inval
 
 To find the encryption weakness, add together the smallest and largest number in this contiguous range; in this example, these are 15 and 47, producing 62.
 """
+#01:05:01   7844
 
 def is_valid(preamble, number):
 

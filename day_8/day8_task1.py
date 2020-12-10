@@ -41,6 +41,7 @@ Immediately before the program would run an instruction a second time, the value
 
 Run your copy of the boot code. Immediately before any instruction is executed a second time, what value is in the accumulator?
 """
+#00:27:48   6668
 
 
 def get_acc(instructions):

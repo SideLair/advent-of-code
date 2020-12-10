@@ -29,6 +29,7 @@ So, in this example, the number of bag colors that can eventually contain at lea
 
 How many bag colors can eventually contain at least one shiny gold bag? (The list of rules is quite long; make sure you get all of it.)
 """
+#01:14:42   6425
    
 class Bag:
     def __init__(self, color, inner_bags):

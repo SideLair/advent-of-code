@@ -5,6 +5,7 @@ It's a completely full flight, so your seat should be the only missing boarding 
 
 Your seat wasn't at the very front or back, though; the seats with IDs +1 and -1 from yours will be in your list.
 """
+#01:34:53   9106
 
 def switch_to_seat_ID(phrase):
     phrase = phrase.replace('R','1').replace('L','0').replace('B','1').replace('F','0')

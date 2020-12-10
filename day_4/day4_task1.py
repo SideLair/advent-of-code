@@ -43,6 +43,8 @@ According to the above rules, your improved system would report 2 valid passport
 
 Count the number of valid passports - those that have all required fields. Treat cid as optional. In your batch file, how many passports are valid?
 """
+#03:50:52  21477
+
 def validate_passport(passport):
     return (len(passport) == 8) or (len(passport) == 7 and 'cid' not in passport)
 
