@@ -32,8 +32,6 @@ def move(instructions):
     current_direction = 'E'
     current_coords = (0, 0)
     current_waypoint_offset = (10, 1)
-    current_waypoint_coords = (
-        current_coords[0] + current_waypoint_offset[0], current_coords[1] + current_waypoint_offset[1])
 
     for instruction in instructions:
         if instruction[0] == 'F':
@@ -60,8 +58,6 @@ def move(instructions):
             new_index = (sides.index(current_direction) + rotation * moves[instruction[0]]) % 4
             current_waypoint_offset = rotations[new_index]
 
-        current_waypoint_coords = (current_coords[0] + current_waypoint_offset[0], current_coords[1] + current_waypoint_offset[1])
-
     print('Manhattan distance of {} is {}'.format(current_coords, abs(current_coords[0]) + abs(current_coords[1])))
 
 
@@ -69,5 +65,5 @@ file = open('input.txt', 'r')
 instructions = [(line.strip('\n')[0], int(line.strip('\n')[1:]))
                 for line in file]
 
-print(instructions)
+#print(instructions)
 move(instructions)
