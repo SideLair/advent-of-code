@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:adventofcode.com)"
     ],
     "deny": [],
     "ask": []

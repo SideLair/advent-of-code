@@ -56,7 +56,7 @@ def main():
     print(f"Part 2: {solve_part2(test_data)}")
     print()
     
-    with open('day01_1.txt', 'r') as f:
+    with open('input.txt', 'r') as f:
         input_data = f.read()
     
     print("Real data:")

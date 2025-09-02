@@ -6,7 +6,8 @@
 ├── CLAUDE.md          # Tento kontext soubor
 ├── day01/
 │   ├── day01.py      # Python řešení
-│   └── day01_1.txt   # Vstupní data
+│   ├── input.txt     # Vstupní data z AoC
+│   └── test.txt      # Testovací data z zadání
 ├── day02/
 │   └── ...
 └── ...
@@ -16,8 +17,8 @@
 
 ### Soubory pro každý den:
 - `dayXX.py` - Python skript s řešením obou částí
-- `dayXX_1.txt` - Vstupní data z AoC
-- `test_dayXX.py` - Unit testy (pokud potřebné)
+- `input.txt` - Vstupní data z AoC
+- `test.txt` - Testovací data z zadání (pokud jsou v samostatném souboru)
 
 ### Struktura Python skriptu:
 ```python
@@ -40,7 +41,7 @@ def main():
     print()
     
     # Real data
-    with open('dayXX_1.txt', 'r') as f:
+    with open('input.txt', 'r') as f:
         input_data = f.read()
     
     print("Real data:")
@@ -62,5 +63,5 @@ if __name__ == "__main__":
 ### Poznámky:
 - Skript vždy vypisuje výsledky obou částí
 - Testuje se nejprve na ukázkových datech z zadání
-- Pak se spouští na skutečných datech z `dayXX.txt`
+- Pak se spouští na skutečných datech z `input.txt`
 - Kód je komentovaný pouze pokud je to nutné pro pochopení algoritmu
