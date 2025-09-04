@@ -1,35 +1,35 @@
 # Advent of Code 2024 - Claude Context
 
-## Projekt struktura
+## Project Structure
 ```
 2024/
-├── CLAUDE.md          # Tento kontext soubor
+├── CLAUDE.md          # This context file
 ├── day01/
-│   ├── day01.py      # Python řešení
-│   ├── input.txt     # Vstupní data z AoC
-│   └── test.txt      # Testovací data z zadání
+│   ├── day01.py      # Python solution
+│   ├── input.txt     # Input data from AoC
+│   └── test.txt      # Test data from problem description
 ├── day02/
 │   └── ...
 └── ...
 ```
 
-## Konvence pro řešení
+## Solution Conventions
 
-### Soubory pro každý den:
-- `dayXX.py` - Python skript s řešením obou částí
-- `input.txt` - Vstupní data z AoC
-- `test.txt` - Testovací data z zadání (pokud jsou v samostatném souboru)
+### Files for each day:
+- `dayXX.py` - Python script with both parts solution
+- `input.txt` - Input data from AoC
+- `test.txt` - Test data from problem description (if in separate file)
 
-### Struktura Python skriptu:
+### Python script structure:
 ```python
 #!/usr/bin/env python3
 
 def solve_part1(input_data):
-    # Řešení první části
+    # Part 1 solution
     pass
 
 def solve_part2(input_data):
-    # Řešení druhé části  
+    # Part 2 solution  
     pass
 
 def main():
@@ -53,15 +53,70 @@ if __name__ == "__main__":
 ```
 
 ### Workflow:
-1. Vytvořit složku `dayXX/`
-2. Připravit `dayXX.py` s template
-3. Implementovat Part 1 na test datech
-4. Spustit na skutečných datech
-5. Implementovat Part 2
-6. Finální test obou částí
+1. Create `dayXX/` folder
+2. Prepare `dayXX.py` with template
+3. Implement Part 1 on test data
+4. Run on real data
+5. Implement Part 2
+6. Final test of both parts
 
-### Poznámky:
-- Skript vždy vypisuje výsledky obou částí
-- Testuje se nejprve na ukázkových datech z zadání
-- Pak se spouští na skutečných datech z `input.txt`
-- Kód je komentovaný pouze pokud je to nutné pro pochopení algoritmu
+### Notes:
+- Script always prints results of both parts
+- Test first on sample data from problem description
+- Then run on real data from `input.txt`
+- Code is commented only when necessary for algorithm understanding
+
+### Coding Standards:
+- **Language**: All variable names, file names, and comments must be in English
+- **Problem-solving approach**: Always propose multiple solution approaches first, then let the user choose which one to implement
+- These standards apply to all code in this repository by default
+
+### Best Practices for Daily AoC Problem Solving:
+
+#### Code Structure:
+- Keep functions small and focused on single responsibility
+- Use descriptive function names that explain what they do
+- Prefer list comprehensions and built-ins over manual loops when readable
+- Use regex for pattern matching problems, but consider readability vs performance
+
+#### Problem-Solving Strategy:
+1. **Read carefully** - understand input format, edge cases, constraints
+2. **Start simple** - get Part 1 working with test data first
+3. **Optimize later** - focus on correctness before performance
+4. **Part 2 evolution** - often extends Part 1 logic, plan for modification
+5. **Input parsing** - handle both test strings and file input consistently
+
+#### Common Patterns:
+- **Grid problems**: Use (row, col) tuples, consider directions as vectors
+- **Graph problems**: BFS for shortest path, DFS for exploration
+- **State machines**: Track current state, process transitions
+- **Dynamic programming**: Memoization for overlapping subproblems
+- **Parsing**: Regex for structured text, split() for simple formats
+
+#### Debugging Tips:
+- Print intermediate results to understand data flow
+- Test with minimal examples before full input
+- Use assertions to verify assumptions
+- Consider boundary conditions and empty inputs
+
+#### Performance Considerations:
+- Most AoC problems run in < 1 second with reasonable algorithms
+- O(n²) is usually acceptable for n < 10,000
+- Use sets for O(1) lookups instead of lists when possible
+- Cache expensive computations with functools.lru_cache
+
+#### Educational Approach:
+- **Always provide learning context** with each solution
+- Explain **why** this approach was chosen over alternatives
+- Discuss **trade-offs**: readability vs performance, memory vs time
+- Highlight **key algorithms/data structures** used and when to apply them
+- Connect to **computer science concepts**: complexity analysis, design patterns
+- Point out **Python-specific features** and their benefits
+- Mention **alternative approaches** and their pros/cons
+- Include **real-world applications** of the techniques used
+
+Examples of educational context:
+- "Regex chosen over manual parsing because pattern is well-defined and complex"
+- "Used set for O(1) lookups instead of list's O(n) - critical for large inputs"
+- "State machine pattern handles complex conditional logic cleanly"
+- "This demonstrates dynamic programming's optimal substructure principle"
