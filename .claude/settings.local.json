@@ -3,7 +3,8 @@
     "allow": [
       "Bash(python:*)",
       "Bash(mkdir:*)",
-      "WebFetch(domain:adventofcode.com)"
+      "WebFetch(domain:adventofcode.com)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
